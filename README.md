@@ -95,6 +95,12 @@ shasum -a 256 <file>          # macOS
 Get-FileHash <file> -Algorithm SHA256   # Windows PowerShell
 ```
 
+## License, security and privacy
+
+- [License (EULA)](LICENSE.md): free to use; no modification, reverse engineering or redistribution.
+- [Security](SECURITY.md): what wwt-lite does and does not do, and how to report a vulnerability.
+- [Privacy](PRIVACY.md): no telemetry; everything stays on your computer.
+
 ---
 
 ## 한국어
@@ -130,3 +136,5 @@ macOS 빌드는 Apple Developer ID로 서명하고 공증합니다. Windows 빌�
 **엔진 끄기:** 엔진은 에이전트가 쓸 때 자동으로 켜집니다. 끄려면 메뉴 막대(트레이) 앱의 **⋯ → 종료**, 멈춘 것 같으면 **엔진 다시 시작**.
 
 **삭제:** 위 영어 안내의 Uninstall 명령을 실행하세요. 평소 쓰는 Chrome 프로필은 건드리지 않습니다.
+
+**라이선스·보안·개인정보:** [LICENSE.md](LICENSE.md)(무료 사용, 수정·역분석·재배포 금지), [SECURITY.md](SECURITY.md), [PRIVACY.md](PRIVACY.md)(사용 정보 수집 없음).

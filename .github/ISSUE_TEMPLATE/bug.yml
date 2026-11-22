@@ -1,0 +1,61 @@
+name: Bug report
+description: Something in wwt-lite does not work as expected.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please do not paste passwords, cookies, tokens or private page content.
+        한국어로 써도 괜찮습니다.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you or your agent did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Asked the agent: "..."
+        2. ...
+  - type: input
+    id: version
+    attributes:
+      label: wwt-lite version
+      description: Output of `wwt-browser --version`
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - macOS (Apple silicon)
+        - Windows 10
+        - Windows 11
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: chrome
+    attributes:
+      label: Chrome version
+      placeholder: e.g. 158.0.1234.56
+  - type: dropdown
+    id: client
+    attributes:
+      label: How do you use it?
+      options:
+        - Agent skill (Claude Code, Codex, other CLI agent)
+        - MCP (Claude desktop or another MCP app)
+        - Menu bar / tray app
+        - Other
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error output or logs
+      description: Remove anything private before pasting.
+      render: text

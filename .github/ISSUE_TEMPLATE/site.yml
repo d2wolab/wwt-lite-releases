@@ -1,0 +1,56 @@
+name: Site doesn't work
+description: A website does not load, behaves differently, or blocks the agent.
+labels: [site]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please do not paste passwords, cookies, tokens, or URLs that contain private information.
+        한국어로 써도 괜찮습니다.
+  - type: input
+    id: site
+    attributes:
+      label: Site
+      description: Domain only is fine (e.g. example.com). Leave out private paths or query strings.
+    validations:
+      required: true
+  - type: textarea
+    id: task
+    attributes:
+      label: What were you trying to do?
+      description: The request you gave the agent, and the step where it went wrong.
+    validations:
+      required: true
+  - type: checkboxes
+    id: symptoms
+    attributes:
+      label: What did you see?
+      options:
+        - label: The page did not load or stayed blank
+        - label: The site showed a block page, "unusual traffic" or a verification check
+        - label: A click or typing did not work
+        - label: The page snapshot or text read was wrong or empty
+        - label: It works in my normal Chrome but not in wwt-lite
+  - type: input
+    id: version
+    attributes:
+      label: wwt-lite version
+      description: Output of `wwt-browser --version`
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - macOS (Apple silicon)
+        - Windows 10
+        - Windows 11
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: more
+    attributes:
+      label: Anything else
+      description: Screenshots (with private details hidden), error output, how often it happens.

@@ -1,0 +1,30 @@
+name: Feature request
+description: Suggest an idea or a missing capability.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: 한국어로 써도 괜찮습니다.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The task or workflow, and what makes it hard today.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Agent skill / CLI
+        - MCP (Claude desktop and other MCP apps)
+        - Take over / Resume and the control bar
+        - Menu bar / tray app
+        - Install and update
+        - Platform support (Intel Mac, Linux, ...)
+        - Other

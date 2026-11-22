@@ -10,7 +10,7 @@ This repository only hosts release downloads (installers, one-line install scrip
 
 ## Requirements
 
-- macOS 13 or later (Apple silicon) or Windows 10/11 (x64)
+- macOS 13.5 or later (Apple silicon) or Windows 10/11 (x64)
 - Google Chrome installed
 - No separate Node.js install needed (it is bundled)
 
@@ -39,7 +39,7 @@ What gets installed:
 | Menu bar / tray app | `~/Applications/wwt-lite.app` | Start menu shortcut |
 | Agent skill `wwt-browser` | `~/.agents/skills` (and `~/.claude/skills`, `~/.codex/skills` if those apps are installed) | same folders under your user profile |
 
-Add `--no-menubar` to skip the menu bar / tray app (for example on a server).
+Options: `--no-menubar` skips the menu bar / tray app (for example on a server), `--no-skills` skips the agent skill. On Windows use `-NoMenubar` and `-NoSkills`.
 
 macOS builds are signed with an Apple Developer ID and notarized. Windows builds are not code-signed yet.
 
@@ -109,7 +109,7 @@ wwt-lite는 AI 에이전트용 브라우저입니다. Claude Code, Codex 같은 
 
 > **상태:** 첫 공개 릴리스를 준비 중입니다. 릴리스가 올라오면 아래 명령이 동작합니다.
 
-**필요한 것:** macOS 13 이상(Apple 칩) 또는 Windows 10/11(x64), Google Chrome. Node.js는 함께 들어 있어 따로 설치하지 않아도 됩니다.
+**필요한 것:** macOS 13.5 이상(Apple 칩) 또는 Windows 10/11(x64), Google Chrome. Node.js는 함께 들어 있어 따로 설치하지 않아도 됩니다.
 
 **설치**
 

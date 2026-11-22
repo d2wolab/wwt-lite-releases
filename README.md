@@ -4,7 +4,7 @@ wwt-lite is a browser for AI agents. Claude Code, Codex and other coding agents 
 
 This repository only hosts release downloads (installers, one-line install scripts and checksums). Source code is not published here.
 
-> **Status:** the first public release is being prepared. The commands below will work once it is published.
+> **Status:** public beta — [v0.1.0-beta.1](https://github.com/d2wolab/wwt-lite-releases/releases/tag/v0.1.0-beta.1). Expect changes; please report issues.
 
 [한국어 안내는 아래에 있습니다.](#한국어)
 
@@ -107,7 +107,7 @@ Get-FileHash <file> -Algorithm SHA256   # Windows PowerShell
 
 wwt-lite는 AI 에이전트용 브라우저입니다. Claude Code, Codex 같은 에이전트가 실제 Chrome 창을 조작하고, 사람은 지켜보다가 언제든 직접 잡을 수 있습니다. 이 저장소에는 설치 파일과 설치 스크립트만 있고 소스 코드는 없습니다.
 
-> **상태:** 첫 공개 릴리스를 준비 중입니다. 릴리스가 올라오면 아래 명령이 동작합니다.
+> **상태:** 공개 베타 [v0.1.0-beta.1](https://github.com/d2wolab/wwt-lite-releases/releases/tag/v0.1.0-beta.1). 바뀔 수 있으니 문제가 있으면 이슈로 알려 주세요.
 
 **필요한 것:** macOS 13.5 이상(Apple 칩) 또는 Windows 10/11(x64), Google Chrome. Node.js는 함께 들어 있어 따로 설치하지 않아도 됩니다.
 
